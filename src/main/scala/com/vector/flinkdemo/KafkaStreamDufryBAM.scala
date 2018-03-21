@@ -9,10 +9,10 @@ The reason is that the package object contains a function which generates the mi
 import org.apache.flink.streaming.connectors.elasticsearch5.ElasticsearchSink
 
 
-import org.apache.flink.streaming.connectors.elasticsearch.{ElasticsearchSinkFunction, RequestIndexer}
-import org.elasticsearch.action.index.IndexRequest
-import org.elasticsearch.client.Requests
-import org.apache.flink.api.common.functions.RuntimeContext
+//import org.apache.flink.streaming.connectors.elasticsearch.{ElasticsearchSinkFunction, RequestIndexer}
+//import org.elasticsearch.action.index.IndexRequest
+//import org.elasticsearch.client.Requests
+//import org.apache.flink.api.common.functions.RuntimeContext
 
 
 import org.apache.flink.streaming.api.scala._
@@ -21,7 +21,7 @@ import org.apache.flink.streaming.api.TimeCharacteristic
 import org.apache.flink.streaming.api.functions.IngestionTimeExtractor
 import org.apache.flink.streaming.api.windowing.time.Time
 import org.apache.flink.streaming.api.scala.DataStream
-import org.apache.flink.streaming.api.scala.KeyedStream
+//import org.apache.flink.streaming.api.scala.KeyedStream
 
 import org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumer011 //con
 import org.apache.flink.streaming.connectors.kafka.FlinkKafkaProducer011 // FlinkKafkaProducer08 no era compatible con el cliente consumer de la 11
@@ -33,28 +33,28 @@ import org.apache.flink.cep.scala.pattern.Pattern
 
 //import org.apache.flink.streaming.util.serialization.SimpleStringSchema; DEPRECATED !!!!
 import org.apache.flink.api.common.serialization.SimpleStringSchema
-import org.apache.flink.api.common.functions.MapFunction
-import org.apache.flink.api.common.functions.FlatMapFunction
-
-import org.apache.flink.api.common.io._
-import org.apache.flink.api.common.typeinfo._
+//import org.apache.flink.api.common.functions.MapFunction
+//import org.apache.flink.api.common.functions.FlatMapFunction
+//
+//import org.apache.flink.api.common.io._
+//import org.apache.flink.api.common.typeinfo._
 
 //import org.apache.flink.streaming.api._
 
-import com.vector.flinkdemo.InfoElasticsearchInserter._
+//import com.vector.flinkdemo.InfoElasticsearchInserter._
 //import org.example.EventsDufry._
-import com.vector.flinkdemo.TickTokenizeFlatMap._
+//import com.vector.flinkdemo.TickTokenizeFlatMap._
 
 import java.util.concurrent.TimeUnit
 import java.util.Properties
-import java.util.stream.Stream
+//import java.util.stream.Stream
 import java.text.{DateFormat, SimpleDateFormat}
 import java.util.Date
 
 
-import scala.util.parsing.json.JSONObject
-import scala.util.parsing.json.JSON
-import java.net.URLEncoder
+//import scala.util.parsing.json.JSONObject
+//import scala.util.parsing.json.JSON
+//import java.net.URLEncoder
 import java.net.InetSocketAddress
 import java.net.InetAddress
 import org.apache.flink.shaded.jackson2.com.fasterxml.jackson.databind.{JsonNode, ObjectMapper}
